@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>Document</title>
+</head>
+
+
+<body>
+
+@@include('../components/_header.html')
+
+@@include('../components/_string.html', {
+  "title": "МЕГАМЕБЕЛЬ В ВАШЕМ ГОРОДЕ"
+})
+<section class="cities">
+    <div class="cities__container">
+            @@include('../components/_city.html', {
+  "img": "./assets/images/city1.webp",
+  "title": "САМАРА",
+  "link": "https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=50.166937%2C53.190741&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM2NTU4MhJF0KDQvtGB0YHQuNGPLCDQodCw0LzQsNGA0LAsINCf0LDRgNGC0LjQt9Cw0L3RgdC60LDRjyDRg9C70LjRhtCwLCAxN9CkIgoNL6tIQhV5w1RC&z=18.6",
+  "adress": "г. Самара, ул. Партизанская, 17Ф",
+  "number": "+7 (846) 228-20-01",
+  "number2": "+7 (846) 373-87-67",
+  "mail": "arendasdm@mail.ru"
+})
+
+@@include('../components/_city.html', {
+  "img": "./assets/images/city2.webp",
+  "title": "САРАТОВ",
+  "link": "https://yandex.ru/map-widget/v1/?ll=45.949617%2C51.585542&mode=poi&poi%5Bpoint%5D=45.950258%2C51.585419&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D210700255660&z=17.09",
+  "adress": "г. Саратов,ул. Элмашевская, 1",
+  "number": "+7 (937) 225-13-26",
+  "number2": "+7 (937) 225-13-26",
+  "mail": "arendasdm@mail.ru"
+})
+
+@@include('../components/_city.html', {
+  "img": "./assets/images/city3.webp",
+  "title": "ЧЕЛЯБИНСК",
+  "link": "https://yandex.ru/map-widget/v1/?ll=61.386401%2C55.119499&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjAyNDE4NBI-0KDQvtGB0YHQuNGPLCDQp9C10LvRj9Cx0LjQvdGB0LosINGD0LvQuNGG0LAg0JTQsNGA0LLQuNC90LAsIDIiCg1ainVCFWh6XEI%2C&z=17.82",
+  "adress": "г. Челябинск, ул. Дарвина, 2",
+  "number": "+7 (351) 211-29-19",
+  "number2": "+7 (351) 211-29-20",
+  "mail": "arendasdm@mail.ru"
+})
+    </div>
+
+</section>
+
+@@include('../components/_footer.html')
+<script src="./assets/js/menu.js"></script>
+<script src="./assets/js/scroll.js"></script>
+</body>
+</html>

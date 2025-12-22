@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>Document</title>
+</head>
+
+
+<body>
+
+@@include('../components/_header.html')
+
+
+@@include('../components/_slide.html', {
+  "img": "./assets/images/banner_bedroom.webp",
+  "title": "Тепло и уют в каждом уголке",
+  "text": "Ваш комфорт – наша забота"
+})
+
+<section class="choices">
+    <div class="choices__container">
+    @@include('../components/_choice.html', {
+    "img": "./assets/images/type11.webp",
+    "text": "КРОВАТИ",
+    "title1": "Двуспальные",
+    "title2": "Односпальные",
+    "title3": "Детские"
+})
+
+    @@include('../components/_choice.html', {
+    "img": "./assets/images/type8.webp",
+    "text": "ПОДУШКИ",
+    "title1": "Классические",
+    "title2": "Эргономичные",
+    "title3": "Гелевые",
+    "title4": "Анатомические"
+})
+
+    @@include('../components/_choice.html', {
+    "img": "./assets/images/type9.webp",
+    "text": "МАТРАСЫ",
+    "title1": "Двуспальные",
+    "title2": "Односпальные",
+    "title3": "Детские"
+})
+
+    @@include('../components/_choice.html', {
+    "img": "./assets/images/type13.webp",
+    "text": "КОМОДЫ",
+    "title1": "Низкие",
+    "title2": "Высокие",
+    "title3": "Комоды витрины",
+    "title4": "Угловые",
+    "title5": "С зеркалом",
+    "title6": "Классические"
+})
+
+    @@include('../components/_choice.html', {
+    "img": "./assets/images/type2.webp",
+    "text": "ТУМБЫ",
+    "title1": "Прикроватные",
+    "title2": "Мягкие",
+    "title3": "Детские",
+    "title4": "Стандартные"
+})
+
+    @@include('../components/_choice.html', {
+    "img": "./assets/images/type12.webp",
+    "text": "КРЕСЛА",
+    "title1": "Кресло-кровать",
+    "title2": "Кресло-мешок",
+    "title3": "Стандартные"
+})
+
+    @@include('../components/_choice.html', {
+    "img": "./assets/images/type6.webp",
+    "text": "ПУФЫ",
+    "title1": "Клиссика",
+    "title2": "С ножками",
+    "title3": "Круглые",
+    "title4": "Квадратные",
+    "title5": "С ящиком"
+})
+
+    @@include('../components/_choice.html', {
+    "img": "./assets/images/type1.webp",
+    "text": "ШКАФЫ",
+    "title1": "Шкафы-купе",
+    "title2": "Прямые",
+    "title3": "Распашные",
+    "title4": "Угловые",
+    "title5": "С зеркалом",
+    "title6": "Навесные",
+    "title7": "Стеллажи"
+})
+
+    @@include('../components/_choice.html', {
+    "img": "./assets/images/type4.webp",
+    "text": "СТОЛЫ",
+    "title1": "Письменные",
+    "title2": "Журнальные",
+    "title3": "Трансформеры",
+    "title4": "Компьютерные"
+})
+
+    @@include('../components/_choice.html', {
+    "img": "./assets/images/type14.webp",
+    "text": "ДИВАНЫ",
+    "title1": "Угловые",
+    "title2": "Прямые",
+    "title3": "Модульные",
+    "title4": "Диваны-кровати",
+    "title5": "Детские"
+})
+</div>
+</section>
+
+@@include('../components/_string.html', {
+  "title": "ВСЕ ТОВАРЫ"
+})
+
+<section class="popular">
+  <div class="popular__container">
+    @@include('../components/_product-card.html', {
+  "img": "./assets/images/product5.webp",
+  "title": "Интерьерные кровати",
+  "shop": "Союз Мебель",
+  "price": "28 600"
+})
+
+@@include('../components/_product-card.html', {
+  "img": "./assets/images/product3.webp",
+  "title": "Тумба Wood",
+  "shop": "Союз Мебель",
+  "price": "7 100"
+})
+
+    @@include('../components/_product-card.html', {
+  "img": "./assets/images/product.webp",
+  "title": "Диван Аргус",
+  "shop": "Союз Мебель",
+  "price": "40 600",
+  "stock": "44 700"
+})
+
+@@include('../components/_product-card.html', {
+  "img": "./assets/images/product12.webp",
+  "title": "Матрас Trend EXSPERT",
+  "shop": "Союз Мебель",
+  "price": "24 200"
+})
+
+@@include('../components/_product-card.html', {
+  "img": "./assets/images/product8.webp",
+  "title": "Шкаф-купе Экспресс",
+  "shop": "Е1",
+  "price": "37 550"
+})
+
+@@include('../components/_product-card.html', {
+  "img": "./assets/images/product11.webp",
+  "title": "Шкаф-купе Лайт",
+  "shop": "Е1",
+  "price": "14 742",
+    "stock": "16 380"
+})
+
+  </div>
+  <button class="types__button">ЕЩЁ</button>
+</section>
+
+@@include('../components/_footer.html')
+<script src="./assets/js/menu.js"></script>
+<script src="./assets/js/scroll.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>Document</title>
+</head>
+
+
+<body>
+
+@@include('../components/_header.html')
+
+@@include('../components/_string.html', {
+  "title": "НОВОЕ В МЕГАМЕБЕЛЬ"
+})
+
+<section class="news">
+    <div class="news__container">
+              @@include('../components/_new.html', {
+  "img": "./assets/images/new1.webp",
+  "title": "Хит тахта Ирис велюр Monolit аква",
+  "shop": "Много Мебели",
+  "text": "Диван с вместительным бельевым коробом в основании"
+})
+
+              @@include('../components/_new.html', {
+  "img": "./assets/images/new2.webp",
+  "title": "Хит тумба Verda Minimalism",
+  "shop": "ОРМАТЕК",
+  "text": "Тумба с мягкой обивкой из премиальных тканей "
+})
+
+              @@include('../components/_new.html', {
+  "img": "./assets/images/new3.webp",
+  "title": "Хит шкаф-купе Прайм 2-х дверный",
+  "shop": "Е1",
+  "text": "Зеркало, белое стекло. Практичное решение для вашего дома."
+})
+</div>
+</section>
+
+
+@@include('../components/_string.html', {
+  "title": "ВЫГОДНО В МЕГАМЕБЕЛЬ"
+})
+
+<section class="new-stocks__container">
+<div class="new-stocks__container">
+          @@include('../components/_stock.html', {
+  "img": "./assets/images/stock1.webp",
+  "title": "Новый Год - Новый дом",
+  "stock": "-20%",
+  "text": "на всю мебель до конца года"
+})
+
+    @@include('../components/_stock.html', {
+  "img": "./assets/images/stock2.webp",
+  "title": "МегаМебель дарит подарки",
+  "stock": "-70%",
+  "text": "подарок за покупку от 5 тыс.  "
+})
+
+    @@include('../components/_stock.html', {
+  "img": "./assets/images/stock3.webp",
+  "title": "Ваши скидки ждут Вас",
+  "stock": "-50%",
+  "text": "поймай скидку на следующую покупку"
+})
+
+    @@include('../components/_stock.html', {
+  "img": "./assets/images/stock4.webp",
+  "title": "За кроватями в МегаМебель",
+  "stock": "-15%",
+  "text": "на кровати от “Союз Мебели”"
+})
+
+    @@include('../components/_stock.html', {
+  "img": "./assets/images/stock5.webp",
+  "title": "Вы достойны лучшего",
+  "stock": "-10%",
+  "text": "на новые товары в Много Мебели"
+})
+
+    @@include('../components/_stock.html', {
+  "img": "./assets/images/stock6.webp",
+  "title": "Работа в комфорте",
+  "stock": "-25%",
+  "text": "на всю офисную мебель"
+})
+</div>
+</section>
+
+
+@@include('../components/_footer.html')
+<script src="./assets/js/menu.js"></script>
+<script src="./assets/js/scroll.js"></script>
+</body>
+</html>

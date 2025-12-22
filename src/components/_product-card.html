@@ -1,0 +1,23 @@
+<article class="product">
+  <div class="product__image">
+    <img src="@@img" class="product__image__img">
+  </div>
+  
+  <div class="product__info">
+    <h3 class="product__title">@@title</h3>
+
+        <div class="product__prices">
+      <span class="product__price">@@price ₽</span>
+     @@if (context.stock) {
+        <span class="product__stock">@@stock ₽</span>
+      }
+    </div>
+    
+    <div class="product__store">
+        <img src="./assets/images/shop.webp" class="product__icon">
+        <span class="product__shop">@@shop</span>
+    </div>
+    
+    <a href="index4.html" class="product__link">Подробнее</a>
+  </div>
+</article>

@@ -1,0 +1,43 @@
+.button_link{
+    &__btn{    
+    width: 328px;
+    height: 69px;
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+    
+        &:hover{
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+}
+
+    &__text{
+        color: #3d3d3d;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .button_link{
+    &__btn{    
+    width: 248px;
+    height: 36px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+    
+        &:hover{
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+}
+
+    &__text{
+        color: #3d3d3d;
+        font-size: 14px;
+    }
+}
+}

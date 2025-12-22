@@ -1,0 +1,164 @@
+.new{
+    width: 308px;
+    height: 341px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    &__container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__info{
+        padding: 20px 0px 0px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+    &__text{
+        color: #A2A2A2;
+        font-size: 16px;
+        width: 185px;
+        margin: 0;
+    }
+    &__logo{
+        width: 93px;
+        height: 45px;
+        padding: 0px 5px;
+        border-radius: 0px 20px 20px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #2AAAE1;
+    }
+
+        &__image{
+            width: 100%;
+            height: 241px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 0px 0px 20px 20px;
+        }
+          &__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 10px;
+    border-radius: 0px 0px 20px 20px;
+
+    height: 100%;
+    padding-left: 30px;
+    background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.3) 0%, 
+    rgba(0, 0, 0, 0.3) 41%, 
+    rgba(162, 162, 162, 0) 100%
+  );
+  }
+
+  &__title{
+    color: #fff;
+    font-size: 24px;
+    margin: 0;
+  }
+  &__shop{
+    color: #fff;
+    font-size: 16px;
+  }
+
+  &__store{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 20px;
+  }
+    
+}
+
+@media (max-width: 768px) {
+    .new{
+    width: 188px;
+    height: 221px;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    &__container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__info{
+        padding: 5px 0px 0px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+    &__text{
+        color: #A2A2A2;
+        font-size: 10px;
+        width: 95px;
+        margin: 0;
+    }
+    &__logo{
+        width: 60px;
+        height: 25px;
+        padding: 0px 3px;
+        border-radius: 0px 20px 20px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #2AAAE1;
+    }
+
+        &__image{
+            width: 100%;
+            height: 188px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 0px 0px 20px 20px;
+        }
+          &__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 5px;
+    border-radius: 0px 0px 20px 20px;
+
+    height: 100%;
+    padding-left: 10px;
+    background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.3) 0%, 
+    rgba(0, 0, 0, 0.3) 41%, 
+    rgba(162, 162, 162, 0) 100%
+  );
+  }
+
+  &__title{
+    color: #fff;
+    font-size: 16px;
+    margin: 0;
+  }
+  &__shop{
+    color: #fff;
+    font-size: 12px;
+  }
+
+  &__store{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 10px;
+  }
+    
+}
+
+}

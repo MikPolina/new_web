@@ -1,0 +1,118 @@
+.overlay{
+    width: 1180px;
+    height: 1395px;
+    padding: 30px 50px;
+    box-shadow:  0 -7px 10px -10px rgba(61, 61, 61, 0.5),
+    0 7px 10px -10px rgba(61, 61, 61, 0.5);
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__arrow{
+        svg {
+      transform: rotate(0deg);
+    }
+    }
+
+    &__title{
+        font-size: 24px;
+        color: #7E4CC3;
+    }
+
+    &__container{
+        margin-bottom: 20px;
+    }
+
+    &__content{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+        row-gap: 10px;
+    }
+
+    &__bottom{
+        width: 1040px;
+        height: 38px;
+        padding: 0px 70px 30px 70px;
+        border-bottom: 1px solid #3d3d3d;
+
+        
+        &__block{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        &__text{
+            font-size: 16px;
+            color: #3d3d3d;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+.overlay{
+    width: 100%;
+    max-width: 768px;
+    height: auto;
+    padding: 0px 0px 10px 0px;
+    box-shadow:  0 -7px 10px -10px rgba(61, 61, 61, 0.5),
+    0 7px 10px -10px rgba(61, 61, 61, 0.5);
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 10px 0px 10px;
+    }
+
+    &__arrow{
+        svg {
+      transform: rotate(0deg);
+    }
+    }
+
+    &__title{
+        font-size: 14px;
+        color: #7E4CC3;
+    }
+
+    &__container{
+        margin-bottom: 10px;
+        padding: 0px 10px 0px 10px;
+    }
+
+    &__content{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        row-gap: 10px;
+    }
+
+    &__bottom{
+        width: 100%;
+        max-width: 368px;
+        height: 65px;
+        padding: 0px 0px 20px 0px;
+        border-bottom: 1px solid #3d3d3d;
+
+        
+        &__block{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 0px 10px 0px 10px;
+        }
+
+        &__text{
+            font-size: 12px;
+            color: #3d3d3d;
+        }
+    }
+}
+
+}
