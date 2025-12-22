@@ -2,15 +2,309 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/main.css" />
     <title>Document</title>
 </head>
-<script src="./assets/js/menu.js"></script>
 
 
 <body>
 
+@@include('../components/_header.html')
+
+
+@@include('../components/_slide.html', {
+  "img": "./assets/images/banner_katalog.webp",
+  "title": "Все идеи для дома в одном месте",
+  "text": "Лучшее в МегаМебель"
+})
+
+<section class="catogories">
+    <div class="categories__container">
+        @@include('../components/_category.html', {
+  "img": "./assets/images/category1.webp",
+  "title": "СПАЛЬНЯ"
+})
+
+        @@include('../components/_category.html', {
+  "img": "./assets/images/category2.webp",
+  "title": "КУХНЯ"
+})
+
+        @@include('../components/_category.html', {
+  "img": "./assets/images/category3.webp",
+  "title": "ГОСТИНАЯ"
+})
+
+        @@include('../components/_category.html', {
+  "img": "./assets/images/category4.webp",
+  "title": "ВАННАЯ"
+})
+
+        @@include('../components/_category.html', {
+  "img": "./assets/images/category5.webp",
+  "title": "ПРИХОЖАЯ"
+})
+
+        @@include('../components/_category.html', {
+  "img": "./assets/images/category6.webp",
+  "title": "ДЕТСКАЯ"
+})
+
+        @@include('../components/_category.html', {
+  "img": "./assets/images/category7.webp",
+  "title": "ОФИС"
+})
+
+        @@include('../components/_category.html', {
+  "img": "./assets/images/category8.webp",
+  "title": "ГАРДЕРОБНАЯ"
+})
+    </div>
+</section>
+
+
+@@include('../components/_string.html', {
+  "title": "ВСЕ ТОВАРЫ"
+})
+
+<section class="types">
+  <div class="types__container">
+
+    <div class="types__arrow">
+  <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_226_1189)">
+<rect x="77" y="77" width="60" height="60" rx="30" transform="rotate(-180 77 77)" fill="white" shape-rendering="crispEdges"/>
+<path d="M28.7929 46.2929C28.4024 46.6834 28.4024 47.3166 28.7929 47.7071L35.1569 54.0711C35.5474 54.4616 36.1805 54.4616 36.5711 54.0711C36.9616 53.6805 36.9616 53.0474 36.5711 52.6569L30.9142 47L36.5711 41.3431C36.9616 40.9526 36.9616 40.3195 36.5711 39.9289C36.1805 39.5384 35.5474 39.5384 35.1569 39.9289L28.7929 46.2929ZM64.5 47V46H29.5V47V48H64.5V47Z" fill="#A2A2A2"/>
+</g>
+<defs>
+<filter id="filter0_d_226_1189" x="0" y="0" width="100" height="100" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="3" dy="3"/>
+<feGaussianBlur stdDeviation="10"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_226_1189"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_226_1189" result="shape"/>
+</filter>
+</defs>
+</svg>
+</div>
+
+    <div class="types__slider">
+    @@include('../components/_type.html', {
+      "img": "./assets/images/type1.webp",
+      "title": "ШКАФЫ"
+})
+
+    @@include('../components/_type.html', {
+      "img": "./assets/images/type2.webp",
+      "title": "ТУМБЫ"
+})
+
+    @@include('../components/_type.html', {
+      "img": "./assets/images/type3.webp",
+      "title": "СТУЛЬЯ"
+})
+
+    @@include('../components/_type.html', {
+      "img": "./assets/images/type4.webp",
+      "title": "СТОЛЫ"
+})
+
+    @@include('../components/_type.html', {
+      "img": "./assets/images/type5.webp",
+      "title": "СТЕНКИ"
+})
+
+    @@include('../components/_type.html', {
+      "img": "./assets/images/type6.webp",
+      "title": "ПУФЫ"
+})
+
+    @@include('../components/_type.html', {
+      "img": "./assets/images/type7.webp",
+      "title": "ПРОЧЕЕ"
+})
+
+    @@include('../components/_type.html', {
+      "img": "./assets/images/type8.webp",
+      "title": "ПОДУШКИ"
+})
+
+    @@include('../components/_type.html', {
+      "img": "./assets/images/type9.webp",
+      "title": "МАТРАСЫ"
+})
+
+    @@include('../components/_type.html', {
+      "img": "./assets/images/type10.webp",
+      "title": "КУХНИ"
+})
+
+    @@include('../components/_type.html', {
+      "img": "./assets/images/type11.webp",
+      "title": "КРОВАТИ"
+})
+
+    @@include('../components/_type.html', {
+      "img": "./assets/images/type12.webp",
+      "title": "КРЕСЛА"
+})
+
+    @@include('../components/_type.html', {
+      "img": "./assets/images/type13.webp",
+      "title": "КОМОДЫ"
+})
+
+    @@include('../components/_type.html', {
+      "img": "./assets/images/type14.webp",
+      "title": "ДИВАНЫ"
+})
+
+    @@include('../components/_type.html', {
+      "img": "./assets/images/type15.webp",
+      "title": "ГАРДЕРОБНЫЕ"
+})
+
+    @@include('../components/_type.html', {
+      "img": "./assets/images/type16.webp",
+      "title": "ДЕТСКОЕ"
+})
+</div>
+
+<div class="types__arrow">
+  <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_226_1186)">
+<rect x="17" y="17" width="60" height="60" rx="30" fill="white" shape-rendering="crispEdges"/>
+<path d="M65.2071 47.7071C65.5976 47.3166 65.5976 46.6834 65.2071 46.2929L58.8431 39.9289C58.4526 39.5384 57.8195 39.5384 57.4289 39.9289C57.0384 40.3195 57.0384 40.9526 57.4289 41.3431L63.0858 47L57.4289 52.6569C57.0384 53.0474 57.0384 53.6805 57.4289 54.0711C57.8195 54.4616 58.4526 54.4616 58.8431 54.0711L65.2071 47.7071ZM29.5 47V48H64.5V47V46H29.5V47Z" fill="#A2A2A2"/>
+</g>
+<defs>
+<filter id="filter0_d_226_1186" x="0" y="0" width="100" height="100" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="3" dy="3"/>
+<feGaussianBlur stdDeviation="10"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_226_1186"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_226_1186" result="shape"/>
+</filter>
+</defs>
+</svg>
+</div>
+
+  </div>
+  <button class="types__button">Перейти в каталог</button>
+</section>
+
+<section class="popular">
+  <div class="popular__container">
+    @@include('../components/_product-card.html', {
+  "img": "./assets/images/product5.webp",
+  "title": "Интерьерные кровати",
+  "shop": "Союз Мебель",
+  "price": "28 600"
+})
+
+@@include('../components/_product-card.html', {
+  "img": "./assets/images/product3.webp",
+  "title": "Тумба Wood",
+  "shop": "Союз Мебель",
+  "price": "7 100"
+})
+
+
+@@include('../components/_product-card.html', {
+  "img": "./assets/images/product10.webp",
+  "title": "Стул Турин Velutto",
+  "shop": "Много Мебель",
+  "price": "6 999",
+    "stock": "11 999"
+})
+
+    @@include('../components/_product-card.html', {
+  "img": "./assets/images/product.webp",
+  "title": "Диван Аргус",
+  "shop": "Союз Мебель",
+  "price": "40 600",
+  "stock": "44 700"
+})
+
+@@include('../components/_product-card.html', {
+  "img": "./assets/images/product4.webp",
+  "title": "Бахус",
+  "shop": "Danika Столы и стулья",
+  "price": "7 800",
+  "stock": "10 235"
+})
+
+
+@@include('../components/_product-card.html', {
+  "img": "./assets/images/product12.webp",
+  "title": "Матрас Trend EXSPERT",
+  "shop": "Союз Мебель",
+  "price": "24 200"
+})
+
+    @@include('../components/_product-card.html', {
+  "img": "./assets/images/product9.webp",
+  "title": "Стул АСТИ NEW велюр ",
+  "shop": "Много Мебель",
+  "price": "3 999",
+  "stock": "7 999"
+})
+
+@@include('../components/_product-card.html', {
+  "img": "./assets/images/product6.webp",
+  "title": "Стол ALTEZA-160",
+  "shop": "stolion",
+  "price": "5 490",
+  "stock": "6 100"
+})
+
+
+@@include('../components/_product-card.html', {
+  "img": "./assets/images/product2.webp",
+  "title": "Rommy",
+  "shop": "stolion",
+  "price": "4 500",
+    "stock": "5 000"
+})
+
+    @@include('../components/_product-card.html', {
+  "img": "./assets/images/product7.webp",
+  "title": "СИРТ",
+  "shop": "stolion",
+  "price": "8 217",
+  "stock": "9 130"
+})
+
+@@include('../components/_product-card.html', {
+  "img": "./assets/images/product8.webp",
+  "title": "Шкаф-купе Экспресс",
+  "shop": "Е1",
+  "price": "37 550"
+})
+
+
+@@include('../components/_product-card.html', {
+  "img": "./assets/images/product11.webp",
+  "title": "Шкаф-купе Лайт",
+  "shop": "Е1",
+  "price": "14 742",
+    "stock": "16 380"
+})
+
+  </div>
+  <button class="types__button">ЕЩЁ</button>
+</section>
+
+@@include('../components/_footer.html')
+<script src="./assets/js/menu.js"></script>
+<script src="./assets/js/scroll.js"></script>
 </body>
 </html>

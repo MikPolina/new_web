@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>Document</title>
+</head>
+
+
+<body>
+
+@@include('../components/_header.html')
+
+    @@include('../components/_goods.html', {
+      "img": "./assets/images/product5.webp",
+      "img1": "./assets/images/dop1.webp",
+      "img2": "./assets/images/dop2.webp",
+      "img3": "./assets/images/dop3.webp",
+      "title": "Интерьерные кровати",
+      "price": "28 600",
+      "stock": "32 400",
+      "delivery": "18.12.2025",
+      "delivery-cost": "1499",
+      "shop": "Союз Мебели",
+      "text": "Детская кровать «Sabrina». Для любителей современной классики — кровать «Sabrina» будет лучшим решением Кровать «Sabrina» комплектуется выдвижным ящиком, который можно использовать, как второе спальное место или ящик для белья, или игрушек . Так же к кровати можно заказать защитный бортик«Sabrina».",
+      "size": "130×200×90",
+      "material": "ДСП",
+      "materialout": "велюр",
+      "footing": "анатомическое",
+      "weight": "77 кг",
+      "term": "77 кг",
+      "set": "Анатомическое основание, каркас, изголовье, изножье, боковины, выдвижная часть, ламели, матрас"
+})
+
+
+@@include('../components/_footer.html')
+<script src="./assets/js/menu.js"></script>
+<script src="./assets/js/scroll.js"></script>
+</body>
+</html>
