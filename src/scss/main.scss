@@ -53,7 +53,7 @@ body{
     }
 
     &__first{
-        width: 1280px;
+        width: 100%;
         height: 467px;
         background-size: cover;
         background-repeat: no-repeat;
@@ -164,9 +164,9 @@ body{
 }
 
     &__slider{
-    width: 1076px; // фиксированная ширина как вы хотели
-    height: 205px; // высота контейнера
-    overflow: hidden; // скрываем всё что выходит за границы
+    width: 1076px;
+    height: 205px;
+    overflow: hidden;
     position: relative;
     
     display: flex;
